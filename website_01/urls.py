@@ -29,7 +29,9 @@ urlpatterns = [
     path('sign/',sign,name='sign'),
     # path('',include('myapp.urls'))    
 
-    urlpatterns+= static(settings.STATIC_URL,document+=settings.STATIC_ROOT)
-    
+
+
 ]
+urlpatterns+= static(settings.STATIC_URL,document_root=settings.STATIC_ROOT)
+
 
